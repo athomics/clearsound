@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clear Sound - Test Your Microphone Online</title>
+</head>
+<body>
+    <header class="header">
+        <div></div>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7065F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" y1="19" x2="12" y2="22"></line>
+            </svg>
+            <h1 class="title">Clear Sound</h1>
+        </div>
+        <a class="changelanguage" href="/pt-br.html"><img src="./imgs/br.png" alt="change language to pt-br"/></a>
+    </header>
+    <section class="section">
+        <div class="sectionDescription">
+            <h1>Test Your Microphone</h1>
+            <p>Clear Sound is a simple and functional application that allows you to test your microphone without the need to install any programs. Check if your device is working normally with just a few clicks!</p>
+        </div>
+        <div>
+            <div id="funcwrapper">
+                <label>Escolha um dispositivo: </label>
+                <select id="selectmic" class="select">
+                </select>
+
+                <div class="recordwrapper">
+                    <div id="waveform"></div>
+                    <div class="buttons">
+                        <button id="startButton" class="record">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#7065F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                <line x1="12" y1="19" x2="12" y2="22"></line>
+                            </svg>
+                        </button>
+
+                        <button id="stopButton" class="stop hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="#F06565" stroke="#F06565" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="disabledmic">
+                <h1>To use the application, you need to allow the use of the microphone!               </h1>
+                <ul>
+                    <li>Open your browser and access the privacy settings. Depending on the browser you are using, the path may vary, but you can usually access privacy settings by clicking on the lock icon or address bar.</li>
+                    <li>Look for the privacy settings related to the microphone and click on them. In some browsers, you may need to click on "Site Settings" or "Settings for this website" before accessing the microphone settings.</li>
+                    <li>You should see a list of sites and applications that have requested microphone access. Look for the site or application that you denied permission and click on it.</li>
+                    <li>Click on "Allow" to grant permission again.</li>
+                    <li>Close the privacy settings and restart the browser.</li>
+                    <li>Access the site or application again and allow microphone access when prompted.</li>
+                </ul>
+            </div>
+            
+            <div id="recorded_audio">
+                
+            </div>
+            <section id="content">
+                <p>
+                    Have you ever needed to test your microphone for an online meeting or audio recording and had to search for a suitable program? Or have you downloaded a program that ended up being more complicated than necessary? With Clear Sound, you don't have to go through this. This application is simple, functional, and can be easily used in just a few clicks. Read on to find out how it works.
+                </p>
+                
+                <h1>How does Clear Sound work?</h1>
+                <p>
+                    Clear Sound is a simple and functional application that allows you to test your microphone without the need to install any programs. With it, you can check if your device is working normally in just a few clicks. But how exactly does it work?
+                </p>
+                <h2>Step-by-step guide to using Clear Sound</h2>
+                <ul>
+                    <li>Access the Clear Sound website</li>
+                    <li>Allow access to your microphone</li>
+                    <li>Click the "Start Test" button</li>
+                    <li>Say something into your microphone</li>
+                    <li>Observe if the purple bars are moving in sync with your voice</li>
+                    <li>If the bars move, your microphone is working normally. Otherwise, check your device's settings.</li>
+                </ul>
+                <h2>Why use Clear Sound?</h2>
+                <ul>
+                    <li>It's easy to use: you don't need to download or install anything. Just access the website and click a button.</li>
+                    <li>It's fast: in just a few clicks, you can check if your microphone is working normally.</li>
+                    <li>It's reliable: Clear Sound is a tool developed by professionals and is used by many people worldwide.</li>
+                </ul>
+                <h2>Frequently Asked Questions about Clear Sound</h2>
+                <strong>Q: Does Clear Sound work on all devices?</strong>
+                A: Yes, Clear Sound is compatible with most devices that have a built-in or connected microphone.
+
+                <strong>Is Clear Sound free?</strong> 
+                A: Yes, Clear Sound is completely free. There is no need to pay anything to use it.
+
+                <strong>Does Clear Sound save audio recordings?</strong>
+                A: No, Clear Sound does not save any audio recordings. It only checks if the microphone is working normally.
+
+                <strong>Can I trust the results from Clear Sound?</strong> 
+                A: Yes, Clear Sound is a reliable tool that is used by many people worldwide.
+            </section>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="./_build/wavemic.js"></script>
+    <script src="./_build/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Testing your microphone online has never been so easy and simple with our free web application. Check the sound quality, volume, and clarity of your microphone in just a few clicks. Try it now and improve your audio experience in online meetings, video calls, and much more!">
+    <meta name="keywords" content="microphone, microphone test, sound, audio, test microphone, sound quality, volume, video calls, video conferencing, online meetings">
+    <title>Clear Sound - Testar seu microfone online</title>
+</head>
+<body>
+    <header class="header">
+        <div></div>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7065F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" y1="19" x2="12" y2="22"></line>
+            </svg>
+            <h1 class="title">Clear Sound</h1>
+        </div>
+        <a class="changelanguage" href="/"><img src="./imgs/eua.png" alt="change language to EN"/></a>
+    </header>
+    <section class="section">
+        <div class="sectionDescription">
+            <h1>Testar seu microfone</h1>
+            <p>Clear Sound é um aplicativo simples e funcional que permite testar o seu microfone sem precisar instalar nenhum programa. Verifique se o seu dispositivo está funcionando normalmente com apenas alguns cliques!</p>
+        </div>
+        <div>
+            <div id="funcwrapper">
+                <label>Escolha um dispositivo: </label>
+                <select id="selectmic" class="select">
+                </select>
+
+                <div class="recordwrapper">
+                    <div id="waveform"></div>
+                    <div class="buttons">
+                        <button id="startButton" class="record">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#7065F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                <line x1="12" y1="19" x2="12" y2="22"></line>
+                            </svg>
+                        </button>
+
+                        <button id="stopButton" class="stop hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="#F06565" stroke="#F06565" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="disabledmic">
+                <h1>Para usar o aplicativo, é necessário permitir o uso do microfone!</h1>
+                <ul>
+                    <li>Abra seu navegador e acesse as configurações de privacidade. Dependendo do navegador que estiver usando, o caminho pode variar, mas geralmente você pode acessar as configurações de privacidade clicando no ícone de cadeado ou na barra de endereço.</li>
+                    <li>Procure pelas configurações de privacidade relacionadas ao microfone e clique nelas. Em alguns navegadores, pode ser necessário clicar em "Configurações do site" ou "Configurações para este site" antes de acessar as configurações do microfone.</li>
+                    <li>Você verá uma lista de sites e aplicativos que solicitaram acesso ao microfone. Procure pelo site ou aplicativo ao qual você negou permissão e clique nele.</li>
+                    <li>Clique em "Permitir" para conceder permissão novamente.</li>
+                    <li>Feche as configurações de privacidade e reinicie o navegador.</li>
+                    <li>Acesse o site ou aplicativo novamente e permita o acesso ao microfone quando solicitado.</li>
+                </ul>
+            </div>
+            
+            <div id="recorded_audio">
+                
+            </div>
+            <section id="content">
+                <p>
+                    Alguma vez você precisou testar o seu microfone para uma reunião online ou gravação de áudio e teve que procurar por um programa adequado? Ou já baixou um programa que acabou sendo mais complicado do que o necessário? Com o Clear Sound, você não precisa passar por isso. Este aplicativo é simples, funcional e pode ser facilmente usado em apenas alguns cliques. Continue lendo para descobrir como ele funciona.
+                </p>
+                
+                <h1>Como o Clear Sound funciona?</h1>
+                <p>
+                    Clear Sound é um aplicativo simples e funcional que permite testar o seu microfone sem a necessidade de instalar qualquer programa. Com ele, você pode verificar se o seu dispositivo está funcionando normalmente em apenas alguns cliques. Mas como exatamente ele funciona?
+                </p>
+                <h2>Guia passo a passo para testar seu microfone</h2>
+                <ul>
+                    <li>Acesse o site do Clear Sound</li>
+                    <li>Permita o acesso ao seu microfone</li>
+                    <li>Clique no botão "Iniciar Teste"</li>
+                    <li>Diga algo no seu microfone</li>
+                    <li>Observe se as barras roxas se movem sincronizadas com a sua voz</li>
+                    <li>Se as barras se movem, seu microfone está funcionando normalmente. Caso contrário, verifique as configurações do seu dispositivo.</li>
+                </ul>
+                <h2>Por que usar o Clear Sound?</h2>
+                <ul>
+                    <li>É fácil de usar: você não precisa baixar ou instalar nada. Apenas acesse o site e clique em um botão.</li>
+                    <li>É rápido: em apenas alguns cliques, você pode verificar se o seu microfone está funcionando normalmente.</li>
+                    <li>É confiável: o Clear Sound é uma ferramenta desenvolvida por profissionais e é usada por muitas pessoas em todo o mundo.</li>
+                </ul>
+                <h2>Perguntas frequentes sobre o Clear Sound</h2>
+                <strong>P: O Clear Sound funciona em todos os dispositivos?</strong>
+                A: Sim, o Clear Sound é compatível com a maioria dos dispositivos que possuem microfone embutido ou conectado.
+
+                <strong>O Clear Sound é gratuito?</strong> 
+                A: Sim, o Clear Sound é completamente gratuito. Não é necessário pagar nada para usá-lo.
+
+                <strong>O Clear Sound salva gravações de áudio?</strong>
+                A: Não, o Clear Sound não salva nenhuma gravação de áudio. Ele apenas verifica se o microfone está funcionando normalmente.
+
+                <strong>Posso confiar nos resultados do Clear Sound?</strong> 
+                A: Sim, o Clear Sound é uma ferramenta confiável que é usada por muitas pessoas em todo o mundo.
+
+            </section>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="./_build/wavemic.js"></script>
+    <script src="./_build/script.js"></script>
+</body>
+</html>
